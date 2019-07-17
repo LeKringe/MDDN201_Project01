@@ -17,21 +17,54 @@ section{
 	margin-bottom: 20px;
 }
 
-header{
+/*header{
+	background-color: darkOrange;
+	color: white; 
+	padding-top: 50px;
+	padding-bottom: 50px;
+	  border-radius: 80px;
+  margin-bottom: 30px;
+  float: center;
+  margin-right: 20px;
+}*/
+
+
+.header img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #555;
+}
+
+.header h1{
 	background-color: darkOrange;
 	color: white; /* more readable on an orange background */
 	padding-top: 50px;
 	padding-bottom: 50px;
 	  border-radius: 80px;
   margin-bottom: 30px;
-  float: left;
+  float: center;
   margin-right: 20px;
 }
 
-nav{
-	width: 50%;
+/*nav{
+	width: 100%;
 	height: 60px;
 	background-color: wheat;
+		  border-radius: 80px;
+  margin-bottom: 30px;
+  float: left;
+  margin-right: 20px;
+}*/
+
+nav{
+	width: 100%;
+	height: 60px;
+	background-color: wheat;
+		  border-radius: 80px;
+  margin-bottom: 30px;
+  float: left;
+  margin-right: 20px;
 }
 
 nav a, nav h3{
@@ -81,4 +114,49 @@ nav a:hover{
 
 .padded{
 	padding: 20px; /* I add this to cells to add a little padding*/
+}
+
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: red;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fa-user:hover {
+  color: #eee;
 }
