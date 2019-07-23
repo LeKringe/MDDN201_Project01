@@ -6,10 +6,35 @@
 
 body{
 	margin: 0px; /* Often browsers have a 5px margin by deafult*/
+	color: #75D1FF;
 	font-family: sans-serif;
+	background-color: #1D3440;
+}
+
+
+/*@font-face {
+  font-family: VT323;
+  src: url(https://fonts.google.com/specimen/VT323);
+}
+
+div {
+  font-family: VT323;
+}*/
+
+
+/*h1 { font-family: VT323; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: VT323; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: VT323; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: VT323; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: VT323; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }*/
+
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 section{
+	 text-align: center;
 	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
@@ -30,14 +55,15 @@ section{
 
 
 .header img {
-  float: left;
-  width: 100px;
-  height: 100px;
+  /*float: left;*/
+ 
+ /* width: 567px;
+  height: 425.1px;*/
   background: #555;
 }
 
 .header h1{
-	background-color: darkOrange;
+	background-color: #3B6980;
 	color: white; /* more readable on an orange background */
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -60,7 +86,7 @@ section{
 nav{
 	width: 100%;
 	height: 60px;
-	background-color: wheat;
+	background-color: #3B6980;
 		  border-radius: 80px;
   margin-bottom: 30px;
   float: left;
@@ -68,16 +94,18 @@ nav{
 }
 
 nav a, nav h3{
-	float: left;
+	/*float: left;
 	margin: 0px;
 	line-height: 60px;
 	margin-left: 1em;
 	margin-right: 1em;
-	text-decoration: none;
+	text-decoration: none;*/
+	display: inline-flex;
 }
 
 nav a:hover{
-	text-decoration: underline; /* Hover styles to let people know they can click it */
+	/*text-decoration: underline;*/ /* Hover styles to let people know they can click it */
+	color: white;
 }
 
 
